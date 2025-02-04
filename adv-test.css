@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #3333ff;
+    text-align: center;
+}
+
+header:hover {
+    color: black;
+    background-color: #33cccc;
+}
+
+h1 {
+    font-weight: bold;
+    color: white;
+    margin-bottom: .5em;
+}
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 1em;
+    background-color: #f4d1a4;
+}
+
+p {
+    margin-bottom: .5em; 
+}
+
+h2 {
+    color: #cc0000;
+    margin-bottom: .5em;
+}
+
+h2:hover {
+    color: #ff66b3;
+}
+
+h3 {
+    color: #e67300;
+    margin-bottom: .5em;
+}
+
+h3:hover {
+    color: #594403;
+}
+
+.link {
+    color: blue;
+}
+
+.link:hover {
+    color: #009999;
+}
+
+.link:visited {
+    color: #551A8B;
+}
+
+#a {
+    width: 100px;
+    height: 100px;
+    background-color: #cc0000;
+    transition: 1s;
+    margin: 0 auto;
+}
+
+#a:hover {
+    background-color: #cc99ff;
+}
+
+#b {
+    width: 100px;
+    height: 100px;
+    background-color: #0033cc;
+    position: relative;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    margin: 0 auto;
+}
+
+#c {
+    width: 100px;
+    height: 100px;
+    background-color: #cc0000;
+    animation-name: color;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    margin: 0 auto;
+}
+
+@keyframes move {
+    0% {left: 0px; right: 0px}
+    25% {left: 30px}
+    50% {left: 60px}
+    75% {right: 30px}
+    100% {left: 0px; right: 0px}
+}
+
+@keyframes color {
+    0% {background-color: #cc0000;}
+    25% {background-color: #ff9933;}
+    50% {background-color: #eecc66;}
+    75% {background-color: #ff9933;}
+    100% {background-color: #cc0000;}
+}
+
+footer {
+    margin-top: 1em;
+}
